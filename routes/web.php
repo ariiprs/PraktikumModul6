@@ -29,4 +29,18 @@ Route::get('profile', ProfileController::class)->name('profile');
 //Route Employee List
 Route::resource('employees', EmployeeController::class);
 
+//Route Edit
+// Route::get('/employees/{employee}/edit', [EmployeeController::class, 'edit'])->name('employees.edit');
+
+Route::get('/employees/{employee}/edit', [EmployeeController::class, 'edit'])->name('employees.edit');
+
+
+
+
+
+
+
+
+
+
 
