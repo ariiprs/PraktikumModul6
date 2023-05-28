@@ -8,13 +8,8 @@
     @vite('resources/sass/app.scss')
 </head>
 <body>
-
-    @extends('layouts.app')
-
-@section('content')
-    @include('default')
-@endsection
-
+    @include('layouts.nav')
+    @yield('content')
     @vite('resources/js/app.js')
 </body>
 </html>
